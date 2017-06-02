@@ -1,19 +1,9 @@
 pipeline {
-  agent any 
+  agent any
   stages {
-    stage('Mensaje1') {
+    stage('') {
       steps {
-        echo 'Hola Mundo'
-      }
-    }
-    stage('Sleep') {
-      steps {
-        sleep 10
-      }
-    }
-    stage('Mensaje2') {
-      steps {
-        echo 'Mensaje2'
+        build(job: 'SortedCollection', quietPeriod: 3)
       }
     }
   }
