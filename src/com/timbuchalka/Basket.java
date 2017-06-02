@@ -6,7 +6,7 @@ import java.util.TreeMap;
 
 /**
  * SortedCollections
- * 
+ * Un ejemplo de ajuste para probar pipelines
  * Basket.java
  * 
  * From Tim Buchalka's Complete Java Developer Course
