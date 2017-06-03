@@ -3,7 +3,21 @@ pipeline {
   stages {
     stage('prueba') {
       steps {
-        echo 'hola mundo'
+        parallel(
+          "prueba": {
+            echo 'hola mundo'
+            
+          },
+          "uno paralelo": {
+            sleep 10
+            
+          }
+        )
+      }
+    }
+    stage('paso3') {
+      steps {
+        catchError()
       }
     }
   }
